@@ -16,6 +16,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
+# Inherit Pixel Launcher Extended
+$(call inherit-product, vendor/PixelLauncherExtended/PixelLauncher.mk)
+PIXEL_LAUNCHER_VARIANT := glance22
+ENABLE_LOCAL_COLOR_POPUPS := true
+ENABLE_OVERVIEW_SELECTIONS := true
+ENABLE_OVERVIEW_SHARING_TO_PEOPLE := true
+ENABLE_QUICKSTEP_LIVE_TILE := true
+ENABLE_REGION_SAMPLING := true
+ENABLE_SMARTSPACE_DISMISS := true
+QUICK_WALLPAPER_PICKER := true
+
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
