@@ -69,8 +69,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audioadsprpcd \
     audio.r_submix.default \
-    audio.usb.default \
-    libtinycompress
+    audio.usb.default
 
 PRODUCT_PACKAGES += \
     libvolumelistener \
