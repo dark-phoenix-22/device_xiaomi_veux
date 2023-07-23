@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_veux.mk
+    $(LOCAL_DIR)/droidx_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_veux-user \
-    aosp_veux-userdebug \
-    aosp_veux-eng
+    droidx_veux-user \
+    droidx_veux-userdebug \
+    droidx_veux-eng
